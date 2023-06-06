@@ -19,8 +19,9 @@
         "drupal/core-composer-scaffold": "^10.1",
         "drupal/core-project-message": "^10.1",
         "drupal/core-recommended": "^10.1",
-        "drush/drush": "^12.3""drupal/automatic_updates": "^3",
-        "drupal/project_browser": "^1.0.x-dev"
+        "drush/drush": "^12.3",
+        "drupal/automatic_updates": "^3",
+        "drupal/project_browser": "^2.0.x-dev"
     },
     "conflict": {
         "drupal/drupal": "*"
