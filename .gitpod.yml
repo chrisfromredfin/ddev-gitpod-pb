@@ -9,7 +9,8 @@ tasks:
       ddev drush si -y --account-pass=admin --site-name='ddev_gitpod' standard
       ddev drush en -y package_manager
       ddev drush en -y project_browser
-      ddev drush -y config:set project_browser.admin_settings allow_ui_install true && ddev drush cr
+      ddev drush -y config:set project_browser.admin_settings allow_ui_install true
+      ddev drush cr
     command: |
       ddev start -y
       gp ports await 8080 && gp preview $(gp url 8080)
