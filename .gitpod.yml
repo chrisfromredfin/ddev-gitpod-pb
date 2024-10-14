@@ -10,6 +10,7 @@ tasks:
       ddev drush en -y admin_toolbar admin_toolbar_tools
       ddev drush en -y package_manager project_browser
       ddev drush -y config:set project_browser.admin_settings allow_ui_install true
+      ddev drush -y config:set --input-format=yaml package_manager.settings additional_trusted_composer_plugins \[tbachert/spi\]
       ddev drush cr
     command: |
       ddev start -y
