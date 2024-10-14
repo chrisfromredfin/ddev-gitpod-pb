@@ -6,7 +6,7 @@ tasks:
   - init: |
       ddev start -y
       ddev composer remove drupal/core-dev
-      ddev composer install
+      ddev composer install --no-dev
       ddev drush si -y --account-pass=admin --site-name='ddev_gitpod' standard
       ddev drush en -y admin_toolbar admin_toolbar_tools
       ddev drush en -y package_manager project_browser
